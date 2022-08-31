@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/pinterest-logo-2432.png">
+    <title>Pinterest</title>
+</head>
+
+<!--
+0.-Tener <nav> </nav> con #navbar-pinterest
+1.- El buscador debe de ser <input> con .finder
+2.- La navbar debe de tener 3 iconos cada uno dentro de <div> </div> a la derecha #notifications #message y #profile-img
+3.- Tener un <main> </main> con #content este debe de contener todas las images
+4.- El icono de pinterest con #pinterest-icon me debe de redireccionar a https://www.pinterest.com
+5.- Cada imagen debe de estar encerrada en un <div> </div> con la clase .card-image
+6.-Por lo menos deben de existir 30 imágenes
+7.-Debes de tener por lo menos una media query
+8.-El navbar siempre debe de estar en el top de la aplicación
+9.- La .card-image tiene un :hover para mostrar los botones -->
+<body>
+
+<nav id="navbar-pinterest"> <!-- Punto 0-->
+    <div id="navbar-container">
+        <div id="navbar-logo">
+            <a href="https://www.pinterest.com" id="pinterest-icon"><!-- Punto 4-->
+                <div>
+                    <img src="./img/pinterest-logo-2432.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div id="navbar-inicio">
+            <div id="navbar-inicio1">Inicio</div>
+            <div id="navbar-inicio2">
+                <img src="./img/arrow-down-3101.png" alt="arrow-down">
+            </div>
+        </div>
+        <div id="navbar-search">
+            <div id="navbar-search1">
+                <input type="text"> <!-- Punto 1-->
+            </div>
+            <div id="navbar-search2">
+                <button>
+                    <div>
+                        <img src="./img/search-2907.png" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="navbar-btns"><!-- Punto 2-->
+            <div id="notifications">
+                <img src="./img/bell-3063.png" alt="">
+            </div>
+            <div id="message">
+                <img src="./img/download-icon-box+inbox+message+pinterest+icon-1320186895903270180_24.png" alt="">
+            </div>
+            <div id="profile-img">
+                <img src="" alt="">
+            </div>
+            <div>
+                <img src="./img/arrow-down-3101.png" alt="">
+            </div>
+        </div>
+    </div>
+</nav>
+<main id="content"> <!-- Punto 3-->
+
+</main>
+    
+</body>
+</html>
