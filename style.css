@@ -1,6 +1,4 @@
-*{
- border: 0.5px dashed red;
-}
+
 body{
     margin: 0 0;
     padding: 0 0;
@@ -12,10 +10,9 @@ body{
 #wrap{
     width: 100%;
     margin: 0 auto;
-    border: 1px dashed blue;
     display: grid;
     grid-template-columns: .125fr 1fr 1fr 1fr 1fr 1fr .125fr;
-    grid-template-rows: 1fr 110fr;
+    grid-template-rows: 1fr 200fr;
     grid-template-areas: "h1 h1 h1 h1 h1 h1 h1"
                          ". c1 c1 c1 c1 c1 ." ;
    
@@ -169,7 +166,7 @@ body{
 }
 
 #searching img{
-    display:none;
+   display: none;
 }
 .hovers:hover{
     padding:3.5%;
@@ -181,7 +178,7 @@ body{
 #content{
     position: relative;
     top: 80px;
-    min-height: 100vh;
+    height: 2000px;
     box-sizing: border-box;
     display: flex;
     flex-flow:row wrap;
@@ -191,6 +188,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: flex-start;
 
     width: 19.3%;
     min-height: 100vh;
@@ -198,25 +196,63 @@ body{
     
 }
 
-.round img{
+
+.round1, .hoverC{
+z-index: 1;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+}
+
+.round1{
+    margin: 5%;
+    align-self: center;
+}
+
+.round1 img{
+    grid-area: 1/1/2/2;
     border-radius: 16px; 
-   
+    align-content: center;
+     
+}
+.hoverC{
+    visibility: hidden;
+    grid-area: 1/1/2/2;
+
+}
+.round1:hover  .hoverC{
+    visibility: visible;
+
+}
+
+.category, .save, .share, .option{
+    grid-area: 1/1/2/2;
+    z-index: 3;
+    
+}
+
+.hovering{
+    width: 100%;
+    background-color: black ;
+    border-radius: 16px;
+    opacity: .5;
+    z-index: 2;
+    grid-area: 1/1/2/2;
+    
 }
 
 .category {
-    z-index: 2;
-    width: 6%;
+    width: 70px;
+    height: 20px;
     color: white;
     font-size: 16px;
     font-weight: 700;
-    position:absolute;
-    top: 1.25%;
-    left:2%;
     background-image: url(./img/arrow-down-3103.png);
     background-size: 18px;
     background-repeat: no-repeat;
     background-position: 50px;
-    display: inline-block;
+    margin-top: 17%;
+    margin-left: 8%;
 }
 
 .save {
@@ -224,11 +260,30 @@ body{
     color: white;
     font-size: 16px;
     font-weight: 700;
-    position: absolute;
-    top: 15px;
-    left:140px;
     padding:12px;
     border-radius: 100px;
+    width:70px;
+    height:20px;
+    margin-top: 12%;
+    margin-left: 55%;
+    text-align: center;
+}
+
+
+.share img{
+    width:24px;
+    padding: 5px;
+    background-color: #efefef;
+    margin-top: 100%;
+    margin-left: 55%;
+}
+
+.option img{
+    width:24px;
+    padding: 5px;
+    background-color: #efefef;
+    margin-top: 100%;
+    margin-left: 80%;
 
 }
 
@@ -252,6 +307,7 @@ body{
  }
 
  #searching img{
+    visibility: visible;
     display: inline;
     width: 24px;
 }
@@ -267,5 +323,46 @@ body{
     background-size: 16px;
     background-position: 80% 50%;
     
+}
+#content{
+    width: 100%;
+}
+
+.round1 {
+        width: 100%;
+        border-radius: 16px; 
+        align-content: center;    
+    }
+
+    .round1 img{
+        width:98%;
+        align-self: stretch;
+    }
+    .hoverC{
+        width: 98%;
+    }
+
+    .share{
+        width:24px;
+        margin-top: 100%;
+    margin-left: 45%;
+    }
+
+    .option{
+        width:24px;
+        margin-top: 100%;
+    margin-left: 65%;
+    }
+#content1, #content2, #content3, #content4{
+    width:49%
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: .125fr 1fr 1fr .125fr;
+    grid-template-rows: 1fr 200fr;
+    grid-template-areas: "h1 h1 h1 h1"
+                         ". c1 c1 ." ;
 }
 }
