@@ -21,11 +21,10 @@
 8.-El navbar siempre debe de estar en el top de la aplicación
 9.- La .card-image tiene un :hover para mostrar los botones -->
 <body>
-
-<nav id="navbar-pinterest"> <!-- Punto 0-->
-    <div id="navbar-container">
+<div id="wrap">
+<nav id="navbar"> <!-- Punto 0-->
         <div id="navbar-logo">
-            <a href="https://www.pinterest.com" id="pinterest-icon"><!-- Punto 4-->
+            <a href="https://www.pinterest.com" id="pinterest-icon" ><!-- Punto 4-->
                 <div>
                     <img src="./img/pinterest-logo-2432.png" alt="">
                 </div>
@@ -33,41 +32,99 @@
         </div>
         <div id="navbar-inicio">
             <div id="navbar-inicio1">Inicio</div>
-            <div id="navbar-inicio2">
-                <img src="./img/arrow-down-3101.png" alt="arrow-down">
+            <div id="navbar-inicio2">Hoy</div>
+            <div id="navbar-inicio3">
+                <span>Crear</span>
+                <div>
+                    <img src="./img/arrow-down-3101.png" alt="">
+                </div>
             </div>
         </div>
         <div id="navbar-search">
-            <div id="navbar-search1">
-                <input type="text"> <!-- Punto 1-->
-            </div>
+             <!--<div id="navbar-search1">
+                <div>
+                   <img src="./img/search-2907.png" alt="">
+                </div>
+            </div>-->
             <div id="navbar-search2">
-                <button>
-                    <div>
-                        <img src="./img/search-2907.png" alt="">
-                    </div>
-                </button>
+                <input type="text" placeholder="     Buscar"> <!-- Punto 1-->
             </div>
         </div>
         <div id="navbar-btns"><!-- Punto 2-->
-            <div id="notifications">
+            <div id="searching" class="hovers">
+                <img src="./img/search-2907.png" alt="">
+            </div>
+            <div id="notifications" class="hovers">
                 <img src="./img/bell-3063.png" alt="">
             </div>
-            <div id="message">
+            <div id="message" class="hovers">
                 <img src="./img/download-icon-box+inbox+message+pinterest+icon-1320186895903270180_24.png" alt="">
             </div>
-            <div id="profile-img">
-                <img src="" alt="">
+            <div id="profile" class="hovers">
+                <img src="./img/perfiljpg2.png" alt="">
             </div>
-            <div>
-                <img src="./img/arrow-down-3101.png" alt="">
+            <div id="arrow">
+                <img src="./img/arrow-down-3102.png" alt="">
             </div>
         </div>
-    </div>
 </nav>
-<main id="content"> <!-- Punto 3-->
-
+<main id="content"><!-- Punto 3-->
+    <div id="content1">
+        <div class="hovering">
+        <div class="round">
+               <img src="./img/home1.jpg" alt="">
+               <div class="category">Home</div>
+               <div class="save">Guardar</div>
+               <div class="share"><img src="" alt=""></div>
+               <div class="option"><img src="" alt=""></div>
+        </div>
+        </div>
+        <div class="round">
+            <div class="hovering">
+            <img src="./img/ideas1.jpg" alt="">
+            <div class="category">Home</div>
+        
+        </div>
+    </div>
+        <div class="round"><img src="./img/varios1.jpg" alt=""></div>
+        <div class="round"><img src="./img/home2.jpg"></div>
+        <div class="round"><img src="./img/ideas2.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios2.jpg" alt=""></div>
+    </div>
+    <div id="content2">
+        <div class="round"><img src="./img/home3.jpg"></div>
+        <div class="round"><img src="./img/ideas3.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios3.jpg" alt=""></div>
+        <div class="round"><img src="./img/home4.jpg"></div>
+        <div class="round"><img src="./img/ideas4.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios4.jpg" alt=""></div>
+    </div>
+    <div id="content3">
+        <div class="round"><img src="./img/home5.jpg"></div>
+        <div class="round"><img src="./img/ideas5.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios5.jpg" alt=""></div>
+        <div class="round"><img src="./img/home6.jpg"></div>
+        <div class="round"><img src="./img/ideas6.jpg" alt=""></div>
+        
+    </div>
+    <div id="content4">
+        <div class="round"><img src="./img/home7.jpg"></div>
+        <div class="round"><img src="./img/ideas7.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios7.jpg" alt=""></div>
+        <div class="round"><img src="./img/home8.jpg"></div>
+        <div class="round"><img src="./img/ideas8.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios8.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios6.jpg" alt=""></div>
+    </div>
+    <div id="content5">
+        <div class="round"><img src="./img/home9.jpg"></div>
+        <div class="round"><img src="./img/ideas8.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios9.jpg" alt=""></div>
+        <div class="round"><img src="./img/home10.jpg"></div>
+        <div class="round"><img src="./img/ideas10.jpg" alt=""></div>
+        <div class="round"><img src="./img/varios10.jpg" alt=""></div>
+    </div>
 </main>
-    
+</div> 
 </body>
 </html>
