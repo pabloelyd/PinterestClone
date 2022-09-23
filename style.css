@@ -354,8 +354,13 @@ grid-template-rows: 1fr;
     margin-left: 65%;
     }
 #content1, #content2, #content3, #content4{
-    width:49%
+ width:49%
 }
+#content5{
+    width:35%;
+    flex-flow:row wrap;
+}
+
 #wrap{
     width: 100%;
     margin: 0 auto;
